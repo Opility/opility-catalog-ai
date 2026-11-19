@@ -39,7 +39,7 @@
     "i18next-resources-to-backend": "^1.2.1",
     "immer": "^9.0.19",
     "js-cookie": "^3.0.8",
-    "katex": "^0.16.21",
+    "katex": "^0.18.2",
     "lodash-es": "^4.18.1",
     "mime": "^4.0.7",
     "negotiator": "^0.6.3",
