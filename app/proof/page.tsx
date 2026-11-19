@@ -79,8 +79,8 @@ const images = [
   },
   {
     "file": "16_live-public-app-successful-listing-output.png",
-    "title": "Verify English and Hebrew Shopify listing output",
-    "note": "Live hosted app response showing English and Hebrew listing drafts, SEO metadata, and the pre-publication review."
+    "title": "Submit the English and Hebrew Shopify listing request",
+    "note": "The seller supplies verified product facts and requests bilingual Shopify drafts, SEO metadata, and a pre-publication review."
   }
 ]
 const facts = ['DemoBrand', '750 ml', 'stainless-steel', 'blue', 'leak-resistant lid', 'reusable design']
