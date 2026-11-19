@@ -1,0 +1,150 @@
+{
+  "project": "Opility Catalog AI",
+  "captured_session": "2026-11-18",
+  "evaluation_date": "2026-11-19",
+  "classification": "evidence review, not an independently rerun Dify test suite",
+  "cases": [
+    {
+      "id": "QA-01",
+      "title": "Ella greeting after configuration correction",
+      "status": "observed-pass",
+      "evidence": [
+        "13-ella-success",
+        "14-build-note-draft"
+      ],
+      "method": "User-provided screenshot of Dify Build Mode chat",
+      "result": "Ella says she is the product listing and localization assistant.",
+      "limits": "Build Mode response, not a full published web app acceptance test."
+    },
+    {
+      "id": "QA-02",
+      "title": "English Shopify listing generation",
+      "status": "observed-pass",
+      "evidence": [
+        "captured-dify-run.md"
+      ],
+      "method": "User-provided Dify output transcript",
+      "result": "Product title, five selling points, description, SEO title, meta description and suggested keywords appear.",
+      "limits": "Single sample product; no current Shopify compliance claim."
+    },
+    {
+      "id": "QA-03",
+      "title": "Hebrew localization",
+      "status": "observed-pass",
+      "evidence": [
+        "captured-dify-run.md"
+      ],
+      "method": "User-provided Dify output transcript",
+      "result": "Hebrew product title, selling points, description and metadata generated for the same sample facts.",
+      "limits": "Language quality not evaluated by independent native-speaker reviewer."
+    },
+    {
+      "id": "QA-04",
+      "title": "Facts preserved across two languages",
+      "status": "review-pass",
+      "evidence": [
+        "captured-dify-run.md"
+      ],
+      "method": "Static review of captured text",
+      "result": "DemoBrand, blue, 750 ml, stainless steel, leak-resistant lid, reusable design are represented in both versions.",
+      "limits": "Manual/static review only; not an automated test suite."
+    },
+    {
+      "id": "QA-05",
+      "title": "Old public branding detected",
+      "status": "observed-issue",
+      "evidence": [
+        "09-old-public-app",
+        "10-webapp-branding"
+      ],
+      "method": "User-provided screenshot",
+      "result": "Published public page displayed generic title and “Hi! I’m Listora.”",
+      "limits": "Screenshot captures earlier state, not necessarily current live page."
+    },
+    {
+      "id": "QA-06",
+      "title": "Build-mode tool error captured",
+      "status": "observed-issue",
+      "evidence": [
+        "08-tool-error"
+      ],
+      "method": "User-provided screenshot",
+      "result": "Dify Tool 'create_research_task' is missing runtime parameters: resource.",
+      "limits": "Root cause not confirmed from screenshot alone."
+    },
+    {
+      "id": "QA-07",
+      "title": "Current public app branding and greeting",
+      "status": "observed-pass",
+      "evidence": [
+        "15-public-new-listing-flow",
+        "16-public-listing-input",
+        "public app tab read"
+      ],
+      "method": "User-supplied published app screenshots and read-only browser inspection of the public web app",
+      "result": "Public title, Ella greeting, description and four starter actions visible.",
+      "limits": "Fresh live generation is user-supplied rather than independently executed by reviewer."
+    },
+    {
+      "id": "QA-08",
+      "title": "Example Listing Mode exact opening and closing",
+      "status": "pending",
+      "evidence": [],
+      "method": "Request fictional Willow & Thread example and inspect output",
+      "result": "Not yet verified by the supplied evidence.",
+      "limits": "Original skill instructions are present; behavior not demonstrated."
+    },
+    {
+      "id": "QA-09",
+      "title": "Unsupported-claims and missing-data challenge",
+      "status": "pending",
+      "evidence": [],
+      "method": "Test skincare product with unspecified ingredients/certifications",
+      "result": "Not yet verified by the supplied evidence.",
+      "limits": "No evidence of negative-path acceptance test."
+    },
+    {
+      "id": "QA-10",
+      "title": "Connected marketplace publication",
+      "status": "not-implemented",
+      "evidence": [],
+      "method": "Authenticated integration",
+      "result": "No store-publishing integration demonstrated.",
+      "limits": "Do not present as operational."
+    },
+    {
+      "id": "QA-11",
+      "title": "Published app starter requests product specifications",
+      "status": "observed-pass",
+      "evidence": [
+        "15-public-new-listing-flow"
+      ],
+      "method": "User-supplied published app screenshot",
+      "result": "Clicking Create a new product listing leads to a focused request for product name, verified features, specifications and package contents.",
+      "limits": "Single user-observed run; not a regression suite."
+    },
+    {
+      "id": "QA-12",
+      "title": "Published app bilingual Shopify draft and review",
+      "status": "observed-pass",
+      "evidence": [
+        "16-public-listing-input",
+        "live-published-shopify-response.md"
+      ],
+      "method": "User-supplied screenshot of request composition plus user-pasted response text",
+      "result": "English/Hebrew listing drafts preserve product facts; provide metadata and pre-publication cautions.",
+      "limits": "Final response was pasted by user; no screenshot of final generated answer or independent execution."
+    },
+    {
+      "id": "QA-13",
+      "title": "No unsupported specs added in published example",
+      "status": "review-pass",
+      "evidence": [
+        "live-published-shopify-response.md"
+      ],
+      "method": "Static inspection of user-provided output against input facts",
+      "result": "No invented warranty, certifications, price or other product specifications found in this example.",
+      "limits": "Only one supplied example, not a broad adversarial evaluation."
+    }
+  ]
+}

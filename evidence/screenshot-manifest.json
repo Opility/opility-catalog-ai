@@ -1,0 +1,242 @@
+[
+  {
+    "num": "01",
+    "file": "955f4310-71ec-529e-905c-718caa70da0e.png",
+    "kind": "builder",
+    "title": "Create app from template",
+    "caption": "Starting point in Dify: the Product Listing Assistant template with the initial app-name dialog open.",
+    "original": "images/original/01_create-app-from-template.png",
+    "cropped": "images/cropped/01_create-app-from-template.png",
+    "crop_box": [
+      320,
+      165,
+      1978,
+      1288
+    ]
+  },
+  {
+    "num": "02",
+    "file": "270b83e8-7faf-50b3-a5c0-aeb553b00a29.png",
+    "kind": "builder",
+    "title": "Initial generated configuration",
+    "caption": "First generated prompt/configuration before Opility and Ella branding were fully corrected.",
+    "original": "images/original/02_initial-generated-configuration.png",
+    "cropped": "images/cropped/02_initial-generated-configuration.png",
+    "crop_box": [
+      320,
+      165,
+      1978,
+      1288
+    ]
+  },
+  {
+    "num": "03",
+    "file": "30fac4b6-7fa8-53f2-be90-2300a2f460b3.png",
+    "kind": "builder",
+    "title": "Skill files overview",
+    "caption": "The embedded skill section showing the generated file set inside the listing-localization skill.",
+    "original": "images/original/03_skill-files-overview.png",
+    "cropped": "images/cropped/03_skill-files-overview.png",
+    "crop_box": [
+      320,
+      165,
+      1978,
+      1288
+    ]
+  },
+  {
+    "num": "04",
+    "file": "19a791d0-2df8-577a-933a-dbaf83985738.png",
+    "kind": "builder",
+    "title": "Tools and knowledge retrieval sections",
+    "caption": "The agent configuration view showing Tools, Knowledge Retrieval, and Advanced Settings during setup.",
+    "original": "images/original/04_tools-and-knowledge-retrieval-sections.png",
+    "cropped": "images/cropped/04_tools-and-knowledge-retrieval-sections.png",
+    "crop_box": [
+      320,
+      165,
+      1978,
+      1288
+    ]
+  },
+  {
+    "num": "05",
+    "file": "f8ddb1ac-66e1-568f-bfca-1bfc8506be0e.png",
+    "kind": "builder",
+    "title": "Edit agent metadata",
+    "caption": "Editing the agent name, role, and description for Opility Catalog AI.",
+    "original": "images/original/05_edit-agent-metadata.png",
+    "cropped": "images/cropped/05_edit-agent-metadata.png",
+    "crop_box": [
+      320,
+      165,
+      1978,
+      1288
+    ]
+  },
+  {
+    "num": "06",
+    "file": "a94f0a51-0ea9-5a16-8ce9-3f1652a1ee07.png",
+    "kind": "builder",
+    "title": "Inspect old SKILL.md content",
+    "caption": "Opening the embedded skill files revealed that the older Listora naming was still present.",
+    "original": "images/original/06_inspect-old-skill-md-content.png",
+    "cropped": "images/cropped/06_inspect-old-skill-md-content.png",
+    "crop_box": [
+      320,
+      165,
+      1978,
+      1288
+    ]
+  },
+  {
+    "num": "07",
+    "file": "2ffcb290-31f8-540f-a55f-7bd2871224f5.png",
+    "kind": "builder",
+    "title": "Build mode error state",
+    "caption": "The agent entered an Action failed state while building, which had to be troubleshooted.",
+    "original": "images/original/07_build-mode-error-state.png",
+    "cropped": "images/cropped/07_build-mode-error-state.png",
+    "crop_box": [
+      320,
+      165,
+      1978,
+      1288
+    ]
+  },
+  {
+    "num": "08",
+    "file": "022f1132-6c4c-5ee9-ac6a-f019e3ce3161.png",
+    "kind": "builder",
+    "title": "Runtime parameter error",
+    "caption": "Visible error message: \u201cDify Tool create_research_task is missing runtime parameters: resource.\u201d",
+    "original": "images/original/08_runtime-parameter-error.png",
+    "cropped": "images/cropped/08_runtime-parameter-error.png",
+    "crop_box": [
+      320,
+      165,
+      1978,
+      1288
+    ]
+  },
+  {
+    "num": "09",
+    "file": "0bfda3b8-b61d-5b8e-b497-b44de87acff6.png",
+    "kind": "public",
+    "title": "Old public branding still visible",
+    "caption": "The hosted public app still showed the old Multilingual Product Listing Assistant branding before the branding settings were updated.",
+    "original": "images/original/09_old-public-branding-still-visible.png",
+    "cropped": "images/cropped/09_old-public-branding-still-visible.png",
+    "crop_box": [
+      335,
+      165,
+      1990,
+      1288
+    ]
+  },
+  {
+    "num": "10",
+    "file": "d8f195a3-24e1-5de0-8f15-6704d823c0fd.png",
+    "kind": "builder",
+    "title": "Branding settings \u2014 main section",
+    "caption": "Access Point branding settings where the web app name and description were updated.",
+    "original": "images/original/10_branding-settings-main-section.png",
+    "cropped": "images/cropped/10_branding-settings-main-section.png",
+    "crop_box": [
+      320,
+      165,
+      1978,
+      1288
+    ]
+  },
+  {
+    "num": "11",
+    "file": "eabc1cd1-ea0a-58fb-a8be-99e46c196316.png",
+    "kind": "builder",
+    "title": "Branding settings \u2014 lower section",
+    "caption": "Lower portion of the branding settings, including input placeholder and disclaimer areas.",
+    "original": "images/original/11_branding-settings-lower-section.png",
+    "cropped": "images/cropped/11_branding-settings-lower-section.png",
+    "crop_box": [
+      320,
+      165,
+      1978,
+      1288
+    ]
+  },
+  {
+    "num": "12",
+    "file": "66d2e2cc-b039-53f7-9da7-bd75dda5b0dc.png",
+    "kind": "builder",
+    "title": "Access Point settings entry",
+    "caption": "The Access Point page where the web app Settings button is used to control hosted app branding.",
+    "original": "images/original/12_access-point-settings-entry.png",
+    "cropped": "images/cropped/12_access-point-settings-entry.png",
+    "crop_box": [
+      320,
+      165,
+      1978,
+      1288
+    ]
+  },
+  {
+    "num": "13",
+    "file": "0aff8b2b-871b-5029-a2d9-1dfd97fcb3bc.png",
+    "kind": "builder",
+    "title": "Build test passes in Dify editor",
+    "caption": "After fixing the failing knowledge-base issue, the agent replied as Ella inside Build mode.",
+    "original": "images/original/13_build-test-passes-in-dify-editor.png",
+    "cropped": "images/cropped/13_build-test-passes-in-dify-editor.png",
+    "crop_box": [
+      320,
+      165,
+      1978,
+      1288
+    ]
+  },
+  {
+    "num": "14",
+    "file": "3121507a-e64b-560c-894e-1595bf58f288.png",
+    "kind": "builder",
+    "title": "Pending build note change",
+    "caption": "The build draft change list shows build_note.md being added when applying updates.",
+    "original": "images/original/14_pending-build-note-change.png",
+    "cropped": "images/cropped/14_pending-build-note-change.png",
+    "crop_box": [
+      320,
+      165,
+      1978,
+      1288
+    ]
+  },
+  {
+    "num": "15",
+    "file": "ce0b29c8-3763-5d5f-8642-a91cb96e1855.png",
+    "kind": "public",
+    "title": "Live public app \u2014 user flow begins",
+    "caption": "The hosted public app greeting screen. The user selected \u201cCreate a new product listing,\u201d and Ella asked for verified product details.",
+    "original": "images/original/15_live-public-app-user-flow-begins.png",
+    "cropped": "images/cropped/15_live-public-app-user-flow-begins.png",
+    "crop_box": [
+      335,
+      165,
+      1990,
+      1288
+    ]
+  },
+  {
+    "num": "16",
+    "file": "843cb1c6-8ef8-5c92-9386-5e0af4f0f7ea.png",
+    "kind": "public",
+    "title": "Live public app \u2014 successful listing output",
+    "caption": "Live hosted app response showing English and Hebrew listing drafts, SEO metadata, and the pre-publication review.",
+    "original": "images/original/16_live-public-app-successful-listing-output.png",
+    "cropped": "images/cropped/16_live-public-app-successful-listing-output.png",
+    "crop_box": [
+      335,
+      165,
+      1990,
+      1288
+    ]
+  }
+]

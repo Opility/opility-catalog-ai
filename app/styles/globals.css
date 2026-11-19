@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@source "../../node_modules/streamdown/dist/index.js";
+
+:root {
+  --max-width: 1100px;
+  --border-radius: 12px;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+
+  --primary-glow: conic-gradient(from 180deg at 50% 50%,
+      #16abff33 0deg,
+      #0885ff33 55deg,
+      #54d6ff33 120deg,
+      #0071ff33 160deg,
+      transparent 360deg);
+  --secondary-glow: radial-gradient(rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0));
+
+  --tile-start-rgb: 239, 245, 249;
+  --tile-end-rgb: 228, 232, 233;
+  --tile-border: conic-gradient(#00000080,
+      #00000040,
+      #00000030,
+      #00000020,
+      #00000010,
+      #00000010,
+      #00000080);
+
+  --callout-rgb: 238, 240, 241;
+  --callout-border-rgb: 172, 175, 176;
+  --card-rgb: 180, 185, 188;
+  --card-border-rgb: 131, 134, 135;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+
+    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
+    --secondary-glow: linear-gradient(to bottom right,
+        rgba(1, 65, 255, 0),
+        rgba(1, 65, 255, 0),
+        rgba(1, 65, 255, 0.3));
+
+    --tile-start-rgb: 2, 13, 46;
+    --tile-end-rgb: 2, 5, 19;
+    --tile-border: conic-gradient(#ffffff80,
+        #ffffff40,
+        #ffffff30,
+        #ffffff20,
+        #ffffff10,
+        #ffffff10,
+        #ffffff80);
+
+    --callout-rgb: 20, 20, 20;
+    --callout-border-rgb: 108, 108, 108;
+    --card-rgb: 100, 100, 100;
+    --card-border-rgb: 200, 200, 200;
+  }
+} */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  /* background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb)); */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+} */
+
+/* CSS Utils */
+.h1 {
+  padding-bottom: 1.5rem;
+  line-height: 1.5;
+  font-size: 1.125rem;
+  color: #111928;
+}
+
+.h2 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #111928;
+  line-height: 1.5;
+}
+
+.link {
+  @apply text-blue-600 cursor-pointer hover:opacity-80 transition-opacity duration-200 ease-in-out;
+}
+
+.text-gradient {
+  background: linear-gradient(91.58deg, #2250F2 -29.55%, #0EBCF3 75.22%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+/* Opility Catalog AI customization — original Opility palette, real Ella logo */
+:root { --ella-navy:#071526; --ella-cyan:#05bfd3; --ella-violet:#845ef7; }
+body { background: #f5f8fc; }
+.ella-app-icon { overflow:hidden; background:#071526!important; border-radius:12px; }
+.ella-app-icon img { display:block; }
+button, a { transition: background-color .16s ease, box-shadow .16s ease; }
+:focus-visible { outline:2px solid var(--ella-cyan); outline-offset:2px; }
+@media(prefers-reduced-motion:reduce) { *, *::before, *::after { scroll-behavior:auto!important; animation-duration:.01ms!important; transition-duration:.01ms!important; }}
+
+/* Evidence page intentionally has its own typographic rhythm. */
+.proof-page{min-height:100vh;background:#f5f7fb;color:#11213a;font-family:Arial,Helvetica,sans-serif}.proof-container{width:min(1160px,calc(100% - 40px));margin:auto}.proof-hero{background:radial-gradient(circle at 85% 20%,#1c4d6a 0%,transparent 36%),linear-gradient(135deg,#061120,#102748);color:white;padding:42px 0 84px}.proof-back{display:inline-block;color:#a6dce8;font-size:13px;margin-bottom:64px}.proof-eyebrow{font-weight:800;font-size:12px;letter-spacing:.17em;color:#13c5d8;margin-bottom:20px}.proof-hero h1{font-size:clamp(42px,7vw,88px);max-width:850px;line-height:1.03;letter-spacing:-.06em;font-weight:850}.proof-hero h1 em{color:#53dfe7;font-style:normal}.proof-hero p{font-size:17px;line-height:1.7;max-width:690px;color:#c1d2df;margin-top:25px}.proof-links{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}.proof-links a{border-radius:12px;padding:13px 19px;font-size:14px;font-weight:700;background:#39dbe3;color:#071526;text-decoration:none}.proof-links a+a{background:transparent;border:1px solid #66869c;color:white}.proof-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:-43px;position:relative}.proof-metrics div{background:white;border:1px solid #e2e9ef;box-shadow:0 10px 24px #07152614;border-radius:15px;padding:24px}.proof-metrics strong{display:block;font-size:36px;color:#0b5d86}.proof-metrics span{font-size:13px;color:#596980}.proof-title{font-size:clamp(28px,4vw,45px);margin:70px 0 10px;letter-spacing:-.04em}.proof-intro{color:#60718b;max-width:830px;line-height:1.7;margin-bottom:26px}.proof-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:23px;margin-bottom:100px}.proof-card{background:white;border:1px solid #dfe8f1;border-radius:18px;overflow:hidden;box-shadow:0 8px 22px #14284908}.proof-image{aspect-ratio:1.65;background:#e5ebf2;overflow:hidden}.proof-image img{width:100%;height:100%;object-fit:contain}.proof-copy{padding:23px}.proof-copy small,.proof-result-card small{font-size:11px;letter-spacing:.12em;font-weight:800;color:#0d7ea2}.proof-copy h3{font-size:21px;margin:8px 0}.proof-copy p{font-size:14px;line-height:1.7;color:#5c6c82}.proof-results{background:#07192d;color:white;padding:85px 0}.proof-results h2{font-size:clamp(30px,5vw,52px);letter-spacing:-.04em}.proof-results>.proof-container>p{max-width:800px;line-height:1.8;color:#c2d4e3;margin:15px 0 28px}.proof-result-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.proof-result-card{padding:27px;border-radius:15px;background:#10283e;border:1px solid #24526a}.proof-result-card small{color:#5ee0e7}.proof-result-card h3{font-size:20px;margin:15px 0;line-height:1.5}.proof-result-card p{font-size:15px;line-height:1.8;color:#c3d5e5}.proof-facts{display:flex;flex-wrap:wrap;gap:9px;margin-top:24px}.proof-facts span{background:#153d50;color:#9df6e8;border-radius:50px;padding:8px 12px;font-size:12px}.proof-limit{padding:20px 0;margin-top:25px;border-top:1px solid #335065;line-height:1.7;color:#b7c8d9;font-size:14px}.proof-footer{padding:28px 0;background:#061120;color:#9aafc5;font-size:13px}.proof-footer a{color:#61d6e0}@media(max-width:720px){.proof-grid,.proof-result-grid{grid-template-columns:1fr}.proof-metrics{grid-template-columns:1fr;gap:8px}.proof-metrics div{padding:15px}.proof-hero{padding-bottom:74px}.proof-back{margin-bottom:45px}}
