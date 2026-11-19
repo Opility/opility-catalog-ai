@@ -1,90 +1,54 @@
-<div align="center"><img src="./public/opility/catalog-ai-logo.webp" alt="Opility Catalog AI — official logo" width="138" />Opility Catalog AI
-Create better product listings. Reach customers in their language.
-Meet Ella — your AI-powered e-commerce listing and localization assistant.
+[![Opility Catalog AI — Product listings and localization with Ella](public/opility/catalog-ai-readme-banner.webp)](https://udify.app/agent/hAhLK7FhuM6NwNvd)
 
-Turn verified product details into clear, market-ready drafts for online stores, with multilingual copy, SEO metadata suggestions, and a built-in pre-publication review.
+# Opility Catalog AI
 
-An Opility AI project · Build • Automate • Grow
+**Meet Ella, Opility’s AI assistant for multilingual e-commerce listings.** Give Ella confirmed product details and get listing drafts, suggested SEO metadata, and a checklist for human review before publishing.
 
-Try Ella Live · Explore the Build & Proof · Visit Opility · Creator's Portfolio
-</div>See Ella in action
-These screenshots show the hosted Ella assistant during the published listing flow. The images are cropped to focus on the app.
-<div align="center">
-<img src="./public/proof/15_live-public-app-user-flow-begins.webp" alt="Real Opility Catalog AI conversation where Ella asks for verified product facts" width="880" />
-<br />
-<sub>Real conversation · Ella requests product facts before drafting</sub>
-<br /><br />
-<img src="./public/proof/16_live-public-app-successful-listing-output.webp" alt="Verified product details entered in the live Opility Catalog AI app" width="880" />
-<br />
-<sub>Published-app test input · DemoBrand reusable bottle · US English and Hebrew requested</sub>
-</div>What Ella helps you create
-- Product listing drafts — readable titles, selling points, and descriptions based on the facts you provide.
-- Multilingual localization — language- and market-specific product copy, including demonstrated English and Hebrew drafts.
-- SEO-ready suggestions — suggested titles, descriptions, and URL handles; not a claim of live keyword research.
-- Listing improvement — revise existing product content while keeping verified information intact.
-- Platform-oriented drafting — content structured for Shopify, Amazon, Shopee, and other marketplaces, with platform policy verification left to the publisher.
-- Pre-publication checks — flag missing details, unsupported claims, and items a merchant should confirm before publishing.
-What it does not do: It does not automatically publish products to a store or verify that a listing complies with every marketplace policy. All outputs are drafts for human review.
+[![Try Ella live](https://img.shields.io/badge/Try_Ella-Live_demo-137F70?style=for-the-badge)](https://udify.app/agent/hAhLK7FhuM6NwNvd)
+[![Visit Opility](https://img.shields.io/badge/Visit-Opility-18273B?style=for-the-badge)](https://opility.com/)
 
-Built from an idea to a working agent
-Opility Catalog AI began as a product-listing template and was developed into an Opility-branded assistant with a defined role, guided conversations, localization safeguards, and a testable user journey.
-Stage	Work performed	Original evidence
-01 · Foundation	Created the application from a Dify listing-assistant template	[App creation](./public/proof/01_create-app-from-template.webp)
-02 · Identity	Established Opility Catalog AI and Ella, replacing the initial template branding	[Configuration](./public/proof/05_edit-agent-metadata.webp)
-03 · Troubleshooting	Diagnosed a failed build-mode action and adjusted the configuration	[Error captured](./public/proof/08_runtime-parameter-error.webp)
-04 · Publishing	Updated the public app name, description, logo, and welcome experience	[Branding settings](./public/proof/10_branding-settings-main-section.webp)
-05 · Verification	Captured Ella's successful response in the editor and a live listing-generation flow	[Editor result](./public/proof/13_build-test-passes-in-dify-editor.webp) · [Published request](./public/proof/16_live-public-app-successful-listing-output.webp)
+[Sample listing](evidence/tests/live-published-shopify-response.md) · [Build journey](evidence/case-study/docs/ACTUAL-BUILD-TIMELINE.md) · [Frontend verification](docs/WORK-MODE-VERIFICATION.md) · [Creator portfolio](https://naveensharma.net/)
 
+## What Ella does
 
-Browse the [full build timeline](./evidence/case-study/docs/ACTUAL-BUILD-TIMELINE.md) and the visual case study source. The case study is available at /proof when the frontend runs locally.
-A real example: one product, two languages
-In the captured live test, Ella received facts about a DemoBrand 750 ml blue stainless-steel water bottle with a leak-resistant lid and reusable design. The request asked for US English and Hebrew listing drafts, suggested SEO metadata, and a pre-publication review.
-What was checked	What the captured run shows
-Guided intake	Ella asked for verified product details
-Listing content	Title, up to five selling points, and a short description
-Localization	Separate US English and Hebrew drafts
-SEO suggestions	Suggested SEO titles, descriptions, and URL handle
-Claim safeguards	Missing details were flagged; the response stated no store changes were made
+- **Drafts listings** with a title, selling points, and a product description based on merchant-supplied facts.
+- **Localizes listings** for different markets. The published Shopify sample includes US English and Hebrew.
+- **Suggests SEO metadata** and flags details to confirm before the merchant publishes.
 
+## Ella in action
 
-See the real live assistant · [**Read the captured Shopify response**](./evidence/tests/live-published-shopify-response.md)
+![Ella asks for confirmed product details in the hosted Opility Catalog AI app](public/proof/15_live-public-app-user-flow-begins.webp)
 
-The published-app screenshots document intake and the submitted request. The captured response text documents the resulting English and Hebrew drafts.
-Verification status
-- Hosted Ella. The recorded Shopify sample shows bilingual listing drafts, SEO suggestions, and a pre-publication review.
-- Custom frontend. The [verification report](./docs/WORK-MODE-VERIFICATION.md) records a successful dependency install, typecheck, lint with 38 warnings, standalone production build, 10 integrity checks, and HTTP smoke tests against a local fixture.
-- Pending. Browser acceptance, the authenticated Service API integration, dependency audit remediation, and production deployment validation remain open. The custom frontend is designed for private preview.
-The Opility experience
-This repository develops a branded web experience for the existing Ella agent, together with a visual case study and reproducible project documentation.
+*The hosted assistant asks for verified product details before drafting.*
 
-Project stack: Next.js · React · TypeScript · Tailwind CSS · Dify conversation API · server-side API proxy · multilingual UI foundations.
+For the published Shopify test, Ella used a fictional DemoBrand 750 ml bottle to produce English and Hebrew drafts with SEO suggestions and review notes. [See the submitted product facts](public/proof/16_live-public-app-successful-listing-output.webp) · [Read the captured bilingual response](evidence/tests/live-published-shopify-response.md)
 
-Project structure:
-app/                 Next.js application and server routes
-app/proof/           Visual build and testing case study
-public/opility/      Opility Catalog AI identity assets
-public/proof/        Cropped, real app screenshots
-service/             API integration layer
-config/              Application configuration
-i18n/                Internationalization resources
-evidence/            Build documentation and QA records
-docs/                Architecture and implementation notes
-tests/               Project-specific checks
-Run the customized frontend locally
-Prerequisites: Node.js 22+, pnpm 11, and an authorized Dify Service API key for the Ella agent.
-pnpm install --frozen-lockfile
-cp .env.example .env.local
-# Set DIFY_API_KEY, DIFY_API_URL and DIFY_PREVIEW_PASSWORD in .env.local
-pnpm dev
-Open http://localhost:3000 for the frontend and http://localhost:3000/proof for the evidence page.
+## Tools behind the product
 
-Security: Never commit .env.local or expose the Dify key through NEXT_PUBLIC_ variables. The development preview uses HTTP Basic authentication with username preview and the password you set; production access needs appropriate abuse controls, rate limits, privacy review, and deployment validation before inviting public traffic. See docs/ and [`WORK_MODE_HANDOFF.md`](./WORK_MODE_HANDOFF.md) for implementation notes.
-Where this project belongs
-On Opility: a customer-facing Opility AI product page showing what Ella does, a working demo, and real examples.
+![Next.js](https://img.shields.io/badge/Next.js-171B22?logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-222B39?logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-145C69?logo=tailwindcss&logoColor=white)
+![i18next](https://img.shields.io/badge/i18next-16746C?logo=i18next&logoColor=white)
+![Dify](https://img.shields.io/badge/Dify-3157BA)
+![Python](https://img.shields.io/badge/Python-326A95?logo=python&logoColor=white)
 
-On Naveen's portfolio: an implementation case study showing configuration, troubleshooting, design decisions, tests, and the resulting working assistant.
-Project credits & licensing
-Opility Catalog AI is an Opility project. Ella is the assistant identity and user experience. Portions of the frontend were customized from the upstream Dify langgenius/webapp-conversation client; the upstream MIT copyright and license notices are preserved in LICENSE. Opility brand assets and original project screenshots are not automatically licensed under that third-party MIT notice.
-<div align="center">From product facts to multilingual listings — with Ella.
-Launch Opility Catalog AI · Opility — Build • Automate • Grow
-</div>
+| Area | Tools and purpose |
+| --- | --- |
+| Web experience | Next.js, React, TypeScript, and Tailwind CSS power the branded chat interface and [visual case study](app/proof/page.tsx). |
+| Localization | i18next manages interface translations. |
+| Agent and API | Dify hosts Ella and provides the conversation API used by the custom frontend. |
+| Delivery and QA | Node.js and pnpm support the build. ESLint, TypeScript, and Python support source checks and fixture tests. |
+
+## Build journey and verification
+
+Opility configured Ella’s guided intake, corrected a build-mode error, applied the product branding, and captured a published bilingual listing run. [Explore the build timeline and screenshots](evidence/case-study/docs/ACTUAL-BUILD-TIMELINE.md)
+
+| Experience | Verified evidence |
+| --- | --- |
+| Hosted Ella | Captured Shopify listing drafts in English and Hebrew, SEO metadata, and pre-publication review. [Read the response](evidence/tests/live-published-shopify-response.md) |
+| Custom frontend | Recorded passing build, typecheck, lint with warnings, 10 integrity checks, and fixture-based HTTP smoke tests. Browser acceptance, authenticated API testing, dependency remediation, and production validation remain pending. [Read the verification report](docs/WORK-MODE-VERIFICATION.md) |
+
+## Credits and license
+
+Opility Catalog AI is an **Opility AI** product. Parts of the frontend are adapted from the Dify `langgenius/webapp-conversation` client. The upstream MIT copyright and license notice is preserved in [LICENSE](LICENSE). Opility branding and original screenshots retain their respective rights.
