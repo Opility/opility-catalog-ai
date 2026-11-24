@@ -35,7 +35,7 @@
     "eslint-config-next": "~15.5.9",
     "eventsource-parser": "^1.0.0",
     "husky": "^9.1.7",
-    "i18next": "^23.16.4",
+    "i18next": "^26.3.4",
     "i18next-resources-to-backend": "^1.2.1",
     "immer": "^9.0.19",
     "js-cookie": "^3.0.8",
